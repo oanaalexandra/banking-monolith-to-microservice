@@ -1,0 +1,1 @@
+INSERT INTO ACCOUNTS VALUES(1, '100','abcd-efgh1','current');
