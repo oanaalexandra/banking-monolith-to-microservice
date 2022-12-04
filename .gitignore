@@ -1,1 +1,10 @@
-/banking-monolith-app/target/
+.idea
+.eclipse
+.idea/
+.run/
+.eclipse/
+.vscode/
+.vs
+.vs/
+
+target/
