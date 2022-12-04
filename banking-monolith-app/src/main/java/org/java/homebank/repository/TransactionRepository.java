@@ -6,7 +6,9 @@ import org.java.homebank.entity.Customer;
 import org.java.homebank.entity.Transaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Long> {
 
   @Query("select tran from transactions tran where tran.source=?1 or tran.destination=?1")
