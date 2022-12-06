@@ -39,11 +39,15 @@ public class Account {
 
   }
 
-  public Account(String number, String type, Float balance,List<Transaction> transactions) {
+  public Account(
+      Long identifier,
+      String number,
+      String type,
+      Float balance) {
+    this.identifier = identifier;
     this.number = number;
     this.type = type;
     this.balance = balance;
-    this.transactions = transactions;
   }
 
   public String getNumber() {
